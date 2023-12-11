@@ -1,0 +1,158 @@
+body{
+    background-color: rosybrown;
+    font-family: 'Open sans' serif;
+    font-size: 20px;
+}
+/*header section*/
+header{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    background-image: url("../assets/image1.jpg");
+    background-size: cover;
+}
+section{
+    color: white;
+}
+#search-input {
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    border-style: none;
+    font-size: 100%;
+    padding: 0px 10px;
+}
+#submit {
+    height: 30px;
+    border-radius: 10px;
+    border-style: none;
+    font-size: 100%;
+    padding: 0px 10px;
+}
+#submit:hover{
+    cursor: pointer;
+}
+.headings {
+    text-align: center;
+    text-transform: capitalize;
+    padding: 10px;
+}
+
+/*main section*/
+main {
+    background-color:none;
+    display:flex ;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+}
+#card-section{
+    display: flex;
+    flex: 1;
+    flex-flow: row wrap;
+    padding: 20px 65px;
+}
+#card-section h1{
+    width: 100%;
+}
+.card{
+    display: inline;
+    width: 400px;
+    float: right;
+    margin: 10px;
+    background-color: azure;
+    border-radius: 5px;
+    
+}
+div.card:hover{
+    border-color: green;
+    
+}
+div.card img{
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+
+}
+div.card img:hover{
+    opacity: 0.7;
+}
+div.activity-description {
+    padding: 10;
+    text-align: center;
+}
+.btn {
+    background-color: #F32013;
+    border: none;
+    display: block;
+    float: left;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    font-size: 100%;
+    cursor: pointer;
+}
+#like-btn{
+    /* display: inline; */
+    float: right;
+    background-color: aliceblue;
+}
+#likes{
+    text-align: right;
+}
+
+
+/* Media query for small screen size */
+
+@media screen and (max-width:480px) {
+    body{
+        background-color: black;
+        color: white;
+    }
+    #header-section{
+        /* padding: 10px; */
+        display: block;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        padding: 10px auto;
+        text-align: center;
+    }
+    #search-input {
+        width: 200px;
+        height: 30px;
+        border-radius: 10px;
+        border-style: none;
+        font-size: 100%;
+        padding: 0px 10px;
+    }
+    #submit {
+        height: 30px;
+        border-radius: 10px;
+        border-style: none;
+        font-size: 100%;
+        padding: 0px 10px;
+    }
+    #card-section{
+        display: block;
+        padding: auto;
+    }
+    .card{
+        display: block;
+        width: 350px;
+        float: right;
+        margin: 10px 0px;
+        background-color: azure;
+        border-radius: 5px;
+        text-align: center;
+        
+    }
+    div.activity-description {
+        padding: 10;
+        text-align: left;
+        display: block;
+        float: left;
+    }
+}
